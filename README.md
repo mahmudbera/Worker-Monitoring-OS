@@ -1,1 +1,6 @@
 # Worker-Monitoring-OS
+# Abstract
+This project revolves around the development of a multi-threaded program consisting of worker processes (adder, subtractor, multiplier, divider) and a worker monitor. Each worker program operates independently in its respective terminal, continuously prompting the user for two numbers and performing the corresponding mathematical operation.
+
+# Project Topic
+The project focuses on the creation of a multi-threaded program that includes worker processes (adder, subtractor, multiplier, divider) and a worker monitor. Each worker operates independently in its terminal, continually prompting the user for numerical inputs and performing mathematical operations. The worker monitor coordinates the activities of the workers, ensuring synchronized communication and preventing interference between concurrent operations. The primary challenge is to implement concurrent communication between WM and each worker using separate pipes for each worker. This is achieved by assigning different methods to individual threads, allowing WM to listen to multiple workers simultaneously. A locking mechanism is employed to ensure that only one thread enters the critical region at a time.
